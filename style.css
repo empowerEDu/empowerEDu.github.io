@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+,
+
+body {
+    background-color: #f1f0e9;
+    color: #010b43;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+h1 {
+
+    margin-left: 100px;
+    position:initial;
+    font-weight:500;
+    padding-top: 150px;
+    font-family: 'Jost', sans-serif;
+    font-size: 90px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+}
+  
+@keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+}
+
+h2{
+    margin-left: 100px;
+    font-weight: 300;
+    font-family: 'Jost', sans-serif;
+    font-size:25px;
+}
+
+a {
+    color: #010b43;
+}
+
+a:hover {
+    color: hotpink;
+  }
+
+.links {
+    color:#010b43;
+    margin-left: 100px;
+    margin-top: 70px;
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 150px;
+}
+
+h4 {
+    font-weight: 300;
+    font-family: 'Jost', sans-serif;
+    font-size:20px;
+    float: right; 
+    margin-right: 75px;
+}
+
+footer{
+    font-weight: 300;
+    font-family: 'Jost', sans-serif;
+    font-size:15px;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    height: 20vh;
+    margin-bottom: 10px;
+
+}
+
+.current-project{
+    width: 90%;
+    height: 300px;
+    margin-left: 5%;
+    margin-top: 75px;
+}
+
+.current-img{
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+.punnet-img {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.current-img:hover{
+    background-color: #f1f0e962;    
+}
+
+.current-text {
+    width: 75%;
+    height: 100%;
+    float: right;
+ 
+}
+
+h3 {
+    margin-left: 40px;
+    font-weight:500;
+    margin-top: 30px;
+    font-family: 'Jost', sans-serif;
+    font-size: 40px; 
+}
+
+.h3-text {
+    width: 85%;
+    margin-left: 40px;
+    font-weight:300;
+    margin-top: 20px;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px; 
+}
+
+.current-link {
+    margin-right: 100px;
+    float: right;
+    font-weight:300;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px; 
+}
+
