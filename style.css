@@ -14,18 +14,31 @@ body {
     overflow-x: hidden;
 }
 
-h1 {
 
-    margin-left: 100px;
+
+h1 {
+    margin-left: 70px;
     position:initial;
     font-weight:500;
     padding-top: 150px;
     font-family: 'Jost', sans-serif;
-    font-size: 90px;
+    font-size: 60px;
     text-align: left;
     white-space: nowrap;
     overflow: hidden;
 }
+
+
+.slides-content {
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 300px;
+    border-width: 10px;
+    border-color: black;
+    float: right;
+}
+
+
 
 span {
     border-right: .05em solid;
@@ -39,39 +52,12 @@ span {
 }
 
 h2{
-    margin-left: 100px;
-    font-weight: 300;
-    font-family: 'Jost', sans-serif;
-    font-size:25px;
-}
-
-a {
-    color: #010b43;
-}
-
-a:hover {
-    color: hotpink;
-  }
-
-.links {
-    color:#010b43;
-    margin-left: 100px;
-    margin-top: 70px;
-    list-style: none;
-}
-
-li{
-    display: inline-block;
-    margin-right: 20px;
-    margin-bottom: 150px;
-}
-
-h4 {
+    width: 50%;
+    margin-left: 70px;
+    margin-top: 10px;
     font-weight: 300;
     font-family: 'Jost', sans-serif;
     font-size:20px;
-    float: right; 
-    margin-right: 75px;
 }
 
 footer{
@@ -84,58 +70,5 @@ footer{
     height: 20vh;
     margin-bottom: 10px;
 
-}
-
-.current-project{
-    width: 90%;
-    height: 300px;
-    margin-left: 5%;
-    margin-top: 75px;
-}
-
-.current-img{
-    width: 25%;
-    height: 100%;
-    float: left;
-}
-.punnet-img {
-    margin-left: 10%;
-    margin-top: 5%;
-}
-
-.current-img:hover{
-    background-color: #f1f0e962;    
-}
-
-.current-text {
-    width: 75%;
-    height: 100%;
-    float: right;
- 
-}
-
-h3 {
-    margin-left: 40px;
-    font-weight:500;
-    margin-top: 30px;
-    font-family: 'Jost', sans-serif;
-    font-size: 40px; 
-}
-
-.h3-text {
-    width: 85%;
-    margin-left: 40px;
-    font-weight:300;
-    margin-top: 20px;
-    font-family: 'Jost', sans-serif;
-    font-size: 18px; 
-}
-
-.current-link {
-    margin-right: 100px;
-    float: right;
-    font-weight:300;
-    font-family: 'Jost', sans-serif;
-    font-size: 18px; 
 }
 
