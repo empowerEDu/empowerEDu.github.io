@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded',function(event){
       return false;
     }
 
-    typeWriter("We are EmpowerED", 0, "h1", function(){
+    typeWriter("We Are EmpowerED", 0, "h1", function(){
     });
     
   });  
