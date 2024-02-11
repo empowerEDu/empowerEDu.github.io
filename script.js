@@ -1,4 +1,5 @@
 // CODE FROM https://css-tricks.com/snippets/css/typewriter-effect/
+
 document.addEventListener('DOMContentLoaded',function(event){
         
     // type one character in the typewriter
