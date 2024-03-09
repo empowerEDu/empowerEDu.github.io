@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -22,8 +22,8 @@ body {
     width: 100%;
     height: 20vh;
     background-color: whitesmoke;
+    color: #010b43;
     padding: 30px;
-    font-family: 'Jost', sans-serif;
     font-size: 25px;
 }
 .banner-right {
@@ -38,7 +38,7 @@ body {
 
 a {
     border: none;
-    color: black;
+    color: #010b43;
     padding: 15px;
     text-align: center;
     text-decoration: none;
@@ -55,10 +55,9 @@ a:hover {
     height: 80vh;
     padding: 15% 30vw 0 30vw;
     background: #81c3d7;
-    font-family: 'Jost', sans-serif;
     width: 100%;
     padding: 60px;
-    color: #FFFFFF;
+    color: #010b43;
 }
 
   .lumie-img:hover {
@@ -104,7 +103,6 @@ span {
 h1 {
     position:initial;
     font-weight:500;
-    font-family: 'Jost', sans-serif;
     font-size: 50px;
     text-align: left;
     white-space: nowrap;
@@ -112,13 +110,11 @@ h1 {
 }
 
 h2{
-    font-family: 'Jost', sans-serif;
     font-size:20px;
 }
 
 footer{
     font-weight: 300;
-    font-family: 'Jost', sans-serif;
     font-size:15px;
     display: flex;
     justify-content: center;
@@ -128,14 +124,12 @@ footer{
 }
 
 .row-main{
-    margin-right: 100px;
+    margin-right: 70px;
 }
 
 .row-input {
     width: 300px;
-    padding-right: 10px;
     font-weight: 300;
-    font-family: 'Jost', sans-serif;
     font-size:15px;
 }
 input[type="text"],
@@ -160,7 +154,6 @@ button[type="submit"] {
     border-radius: 8px;
     border: none;
     font-weight: 300;
-    font-family: 'Jost', sans-serif;
     font-size:15px;
 
   }
@@ -185,7 +178,6 @@ button[type="app"] {
     border-radius: 8px;
     border: none;
     font-weight: 300;
-    font-family: 'Jost', sans-serif;
     font-size:20px;
 
   }
