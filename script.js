@@ -37,3 +37,5 @@ document.addEventListener('DOMContentLoaded',function(event){
     x[slideIndex-1].style.display = "block"; 
     setTimeout(carousel, 7000); 
   }
+
+  

@@ -18,18 +18,18 @@ body {
 
 
 
+
 .banner{
     width: 100%;
     height: 20vh;
     background-color: whitesmoke;
     color: #010b43;
-    padding: 30px;
-    font-size: 25px;
+    font-size: 10vh;
 }
 .banner-right {
     float: right;
-    padding-top: 15px;
-    margin-right: 20px;
+    margin-right: 10vh;
+    margin-top: 1vh;
 }
 
 .pages {
@@ -39,11 +39,11 @@ body {
 a[class=pages] {
     border: none;
     color: #010b43;
-    padding: 15px;
+    padding: 3vh;
     text-align: center;
     text-decoration: none;
-    font-size: 20px;
-    margin: 4px 10px;
+    font-size: 3vh;
+    margin: 3vh;
     border-radius: 12px;
 }
 
@@ -100,7 +100,7 @@ a[class=opp]:hover {
 
 .month-at-a-glance {
     width: 100%;
-    height: 500px;
+    height: 70vh;
     background-color: white;
     padding: 60px;
 }
@@ -162,9 +162,9 @@ footer{
 }
 
 .row-input {
-    width: 300px;
+    width: 40vh;
     font-weight: 300;
-    font-size:15px;
+    font-size:5vh;
 }
 input[type="text"],
 input[type="email"] {
