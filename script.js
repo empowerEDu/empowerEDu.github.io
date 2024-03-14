@@ -38,4 +38,11 @@ document.addEventListener('DOMContentLoaded',function(event){
     setTimeout(carousel, 7000); 
   }
 
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
   
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }

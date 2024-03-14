@@ -11,6 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
+    <script src="https://kit.fontawesome.com/c6ffe2ba2c.js" crossorigin="anonymous"></script>
+
     <link rel="icon" type="images/png" href="images/logo-clear.png">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" type="text/css" href="normalize.css">
@@ -19,17 +21,22 @@
   </head>
   <body>
     <header>
-
       
       <div class="banner">
         <div style="padding: 4vh; float: left;"><img src="images/logo-clear.png" class="logo-img", width="60px">
         </div>
         <div class="banner-right">          
-          <div class="pages"><a class="pages" href="">Home</a></div>
-          <div class="pages"><a class="pages" href="newsletter.html">Newsletters</a></div>
-          <div class="pages"><a class="pages" href="opportunities.html">Opportunities</a></div>
-          <div class="pages"><a class="pages" href="contact.html">Contact</a></div>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="pages"><a class="pages" href="">Home</a></div>
+            <div class="pages"><a class="pages" href="newsletter.html">Newsletters</a></div>
+            <div class="pages"><a class="pages" href="opportunities.html">Opportunities</a></div>
+            <div class="pages"><a class="pages" href="contact.html">Contact</a></div>
+          </div>
           
+          <!-- Use any element to open the sidenav -->
+          <span class="open-btn" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+    
         </div>
       </div>
       <div class="introduction">
@@ -57,46 +64,21 @@
       <section class="sign-up">
         <div class="row-main" style="float: left;">
             <h1>Light a Connection with us!</h1>
-            <h3 style="padding-left: 3vh;"><br>Stay tuned for our newsletter, coming soon!</h3>
-            <!--<h3 style="padding-left: 20px;"><br>Sign up for our newsletter to get news about <br>local exciting events, delivered to your inbox.</h3>-->
+            <h3 style="padding-left: 20px;"><br>Sign up for our newsletter to get news about <br>local exciting events, delivered to your inbox.</h3>
             <div class="col span-1-of-3">
               <label>&nbsp;</label>
           </div>
         </div>
         <div class="row-main" style="float: right; margin-top: 10px;">
 
-          <!--
-            <form method="post" action="#" class="contact-form">
-                <div class="row-input">
-                    <div class="label-input">
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="label-box">
-                        <input type="text" name="name" id="name" placeholder="your name" required>
-                    </div>
-                    <div class="col span-1-of-3">
-                      <label>&nbsp;</label>
-                  </div>
-                </div>
-                  <div class="row-input">
-                    <div class="label-input">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="label-box">
-                        <input type="email" name="email" id="email" placeholder="email address" required>
-                    </div>
-                    <div class="col span-1-of-3">
-                      <label>&nbsp;</label>
-                  </div>
-                </div>
-                <div class="row">
-                    <div class="col span-2-of-3">
-                        <button type="submit">Sign up!</button>
-                    </div>
-                </div>
-                
+          <!-- modify this form HTML and place wherever you want your form -->
+          <form action="https://formspree.io/f/mrgnlner" method="POST">
+            <label>Name:<input type="name" name="name" required></label>
+            <label>Email:<input type="email" name="email" required></label>
+
+            <!-- your other form fields go here -->
+            <button type="submit">Sign up!</button>
             </form>
-          -->
         </div>
     </section>
       
