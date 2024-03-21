@@ -16,41 +16,52 @@ body {
     overflow-x: hidden;
 }
 
-
-
-
+/* top banner*/
 .banner{
     width: 100%;
     height: 20vh;
     background-color: whitesmoke;
     color: #010b43;
-    font-size: 10vh;
-}
-.banner-right {
-    float: right;
-    margin-right: 10vh;
-    margin-top: 1vh;
 }
 
 .pages {
-    display: inline-block;
+  display: inline-block;
 }
 
 a[class=pages] {
-    border: none;
-    color: #010b43;
-    padding: 3vh;
-    text-align: center;
-    text-decoration: none;
-    font-size: 3vh;
-    margin: 3vh;
-    border-radius: 12px;
+  border: none;
+  color: #010b43;
+  padding: 3vh;
+  text-align: center;
+  text-decoration: none;
+  font-size: 3vh;
+  margin: 3vh;
+  border-radius: 12px;
 }
 
 a[class=pages]:hover {
-    background-color: #81c3d7;
+  background-color: #81c3d7;
 }
 
+.intro-text{
+  padding-top: 15vh;
+}
+
+/* intro */
+.introduction {
+  height: 80vh;
+  padding: 15% 30vw 0 30vw;
+  background: #81c3d7;
+  width: 100%;
+  padding: 60px;
+  color: #010b43;
+}
+
+.lumie-img:hover {
+  transform: translateY(-10px);
+}
+
+/*apply button + roles*/
 a[class=appl] {
     border: none;
     background-color:#81c3d7;
@@ -85,19 +96,7 @@ a[class=opp]:hover {
     background-color: #010b43;
 }
 
-.introduction {
-    height: 80vh;
-    padding: 15% 30vw 0 30vw;
-    background: #81c3d7;
-    width: 100%;
-    padding: 60px;
-    color: #010b43;
-}
-
-  .lumie-img:hover {
-    transform: translateY(-10px);
-  }
-
+/*month summary*/
 .month-at-a-glance {
     width: 100%;
     height: 70vh;
@@ -105,100 +104,73 @@ a[class=opp]:hover {
     padding: 60px;
 }
 
-.sign-up {
-    width: 100%;
-    height: 350px;
-    padding: 60px;
-}
+/*form*/
 
-
-.home{
-    display: inline-block;
-    width: 300px;
-}
-
-.slides-content {
-    display: inline-block;
-    width: 500px;
-    height: 300px;
-}
-
-span[class="true"]{
-    border-right: .05em solid;
-    animation: caret 1s steps(1) infinite;
-}
-  
-@keyframes caret {
-    50% {
-      border-color: transparent;
-    }
-}
-
-h1 {
-    position:initial;
-    font-weight:500;
-    font-size: 50px;
-    text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-h2{
-    font-size:20px;
-}
-
-footer{
-    font-weight: 300;
-    font-size:15px;
-    display: flex;
-    justify-content: center;
-    align-items: last baseline;
-    height: 20vh;
-    padding-bottom: 25px;
+.newsletter {
+  padding: 15% 30vw 0 30vw;
+  background: #81c3d7;
+  width: 100%;
+  padding: 60px;
+  color: #010b43;
 }
 
 .row-main{
-    margin-right: 70px;
+  margin-right: 70px;
 }
 
 .row-input {
-    width: 40vh;
-    font-weight: 300;
-    font-size:5vh;
+  width: 40vh;
+  font-weight: 300;
+  font-size:5vh;
 }
 input[type="name"],
 input[type="email"] {
-    flex-grow: 1; /* Fill available space equally */
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    width: 40vw;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  width: 40vw;
+  margin-left: 5vh;
 }
 
 button[type="submit"] {
-    width: 40%;
-    padding: 5px;
-    background-color:#fff;
-    color: #000;
-    cursor: pointer;
-    font-size: 0.9rem;
-    text-align: center;
-    border-radius: 8px;
-    border: none;
-    font-weight: 300;
-    font-size:15px;
-    float: right;
-    margin-top: 3vh;
+  width: 40%;
+  padding: 5px;
+  background-color:#fff;
+  color: #000;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  font-weight: 300;
+  font-size:15px;
+  float: right;
+  margin-top: 3vh;
 
-  }
-  
-  button[type="submit"]:hover {
-    background-color:#ddd;
-    color: #000;
-    border: none;
-  }
+}
+
+button[type="submit"]:hover {
+  background-color:#ddd;
+  color: #000;
+  border: none;
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    height: 10vh;
+    padding-bottom: 25px;
+    background: #81c3d7;
+
+}
+
+
+
 
 /* The side navigation menu */
 .sidenav {
