@@ -115,9 +115,9 @@ button[type="register"] {
   border: none;
   font-weight: 300;
   font-size:15px;
-  float: right;
-  margin-top: 3vh;
-  
+  margin: 0 auto;
+  margin-top: 10vh;
+  display: block;  
   }
   
   button[type="register"]:hover {
@@ -169,8 +169,10 @@ border-radius: 8px;
 border: none;
 font-weight: 300;
 font-size:15px;
-float: right;
-margin-top: 3vh;
+margin: 0 auto;
+  margin-top: 3vh;
+  display: block;  
+
 
 }
 
