@@ -13,7 +13,7 @@
      <!--Font stuff-->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:wght@400;700&display=swap" rel="stylesheet">
      
      <!--Animation Package-->
      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
@@ -30,66 +30,80 @@
 
   </head>
   <body>
-    <header>
-      <div class="banner">
-        <div style="float: left; margin: 3vh;";><img src="images/logo-clear.png" class="logo-img", width="70vh"></div>
-        
-        <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div class="pages"><a class="pages" href="index.html">Home</a></div>
-          <div class="pages"><a class="pages" href="newsletter.html">Newsletters</a></div>
-          <div class="pages"><a class="pages" href="contact.html">Contact</a></div>
-          <div class="pages"><a class="pages" href="meet the team.html">Team</a></div>
-
-      </div>
+    <div class="wrapper">
+      <header>
+        <div class="banner">
+          <div style="float: left; margin: 3vh; display: flex; align-items: center;">
+            <img src="images/logo-clear.png" class="logo-img" width="70vh">
+            <span class="empowered-text">EMPOWERED</span>
+          </div>
           
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="pages"><a class="pages" href="index.html">Home</a></div>
+            <div class="pages"><a class="pages" href="newsletter.html">Newsletters</a></div>
+            <div class="pages"><a class="pages" href="contact.html">Contact</a></div>
+            <div class="pages"><a class="pages" href="meet the team.html">Team</a></div>
+          </div>
+            
           <!-- Use any element to open the sidenav -->
           <span class="open-btn" onclick="openNav()"><i style="padding: 3vh" class="fa-solid fa-bars"></i></span>
-
-    </div></header>
-
-    <div class="introduction">
-      <div class="container">
-        <div class="row row-cols-2">
-          <div class="col-md-6 col-12">
-          <style>
-            a {text-decoration: none; color: #010b43; }
-            a:hover {color: #fff;}
-  
-            .pages{list-style-type: none; padding-bottom: 2vh;}
-  
-          </style>
-          <h1 style="margin-bottom: 7vh;">Let's get in touch!</h1>
-
-          <!--Email-->
-          <a class="pages pair" href="mailto:contact.empowered.edu@gmail.com"><i class="fa-solid fa-envelope fa pair"></i>&nbsp;contact.empowered.edu<wbr>@gmail.com</a><br>
-          <!--Instagram-->
-          <a class="pages pair" href="https://www.instagram.com/_empower.ed/"><i class="fa-brands fa-square-instagram"></i>&nbsp;@_empower.ed</a><br>
-          <!--Linktree-->
-          <a class="pages pair" href="https://linktr.ee/_empower.ED"><i class="fa-solid fa-link"></i></i>&nbsp;@_empower.ED</a><br>
-          <!--LinkedIn-->
-          <a class="pages pair" href="https://www.linkedin.com/company/em-power-ed"><i class="fa-brands fa-linkedin"></i></i>&nbsp;EmpowerED</a><br>
-
         </div>
+      </header>
 
-          
-          <div class="col-md-6 col-12" >
-            <img src="images/LumieComputer.png" class="logo-img" width="70%">
+      <div class="introduction">
+        <div class="container">
+          <div class="row row-cols-2">
+            <div class="col-md-6 col-12">
+              <style>
+                a {text-decoration: none; color: #010b43; }
+                a:hover {color: #fff;}
+    
+                .pages{list-style-type: none; padding-bottom: 2vh;}
+    
+              </style>
+              <h1 style="margin-bottom: 7vh;">Let's get in touch!</h1>
+
+              <!--Email-->
+              <div class="contact-item">
+                
+                <a class="pages pair" href="mailto:contact.empowered.edu@gmail.com"><i class="fa-solid fa-envelope fa pair"></i>&nbsp;contact.empowered.edu<wbr>@gmail.com</a><br><br>
+              </div>
+              <!--Instagram-->
+              <div class="contact-item">
+              
+                <a class="pages pair" href="https://www.instagram.com/_empower.ed/"><i class="fa-brands fa-square-instagram"></i>&nbsp;@_empower.ed</a><br><br>
+              </div>
+              <!--Linktree-->
+              <div class="contact-item">
+               
+                <a class="pages pair" href="https://linktr.ee/_empower.ED"><i class="fa-solid fa-link"></i></i>&nbsp;@_empower.ED</a><br><br>
+              </div>
+              <!--LinkedIn-->
+              <div class="contact-item">
+               
+                <a class="pages pair" href="https://www.linkedin.com/company/em-power-ed"><i class="fa-brands fa-linkedin"></i></i>&nbsp;EmpowerED</a><br><br>
+              </div>
+
+              <img src="images/sparkles2.png" alt="Sparkles Image" class="sparkle-top-left">
+            </div>
+
+            <div class="col-md-6 col-12">
+              <img src="images/LumieExcited.png" class="logo-img" width="40%">
+            </div>
           </div>
-        
-      </div>
-      
-      
+        </div>
       </div>
 
       <footer>&copy; Copyright 2024 EmpowerED</footer>
-  
-  
-      <script src="script.js"></script>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
-  
-    </body>
-  </html>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+</html>

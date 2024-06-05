@@ -11,7 +11,7 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Wrapper to maintain full-page background color */
+
 .wrapper {
   background-color: #81c3d7;
   min-height: 100vh;
@@ -25,6 +25,10 @@ html, body {
   height: 20vh;
   background-color: whitesmoke;
   color: #010b43;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
 }
 
 .pages {
@@ -106,6 +110,7 @@ a[class=opp]:hover {
   padding: 60px;
 }
 
+/*register button */
 button[type="register"] {
   width: 20%;
   padding: 5px;
@@ -158,6 +163,7 @@ input[type="name"], input[type="email"] {
   margin-left: 5vh;
 }
 
+/*submit*/
 button[type="submit"] {
   width: 40%;
   padding: 5px;
@@ -186,32 +192,32 @@ footer {
   bottom: 0;
   right: 0;
   padding: 10px;
-  background-color: #81c3d7; /* Background color for the footer */
-  color: #010b43; /* Text color */
+  background-color: #81c3d7; 
+  color: #010b43; 
   font-family: 'Poppins', sans-serif;
-  z-index: 10; /* Ensure it stays on top of other content */
+  z-index: 10; 
 }
 
-/* The side navigation menu */
+/*  side navigation menu */
 .sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
   right: 0;
-  background-color: #010b43; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  background-color: #010b43; 
+  overflow-x: hidden; /* no horizontal scroll */
+  padding-top: 60px; 
+  transition: 0.5s; 
 }
 
-/* The navigation menu links */
+/*  navigation menu links */
 .sidenav a {
   padding: 10px;
   text-decoration: none;
   font-size: 25px;
-  background-color: #010b43; /* Black */
+  background-color: #010b43; 
   color: #f8edeb;
   display: block;
   transition: 0.3s;
@@ -225,12 +231,12 @@ footer {
   margin-left: 50px;
 }
 
-/* When you mouse over the navigation links, change their color */
+/* hover over the navigation links anf change  color */
 .sidenav a:hover {
   color: #f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
+
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -239,13 +245,13 @@ footer {
   margin-left: 50px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
 #main {
   transition: margin-left 0.5s;
   padding: 20px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/*  smaller screens, where height is less than 450px*/
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
@@ -265,12 +271,15 @@ footer {
   color: #010b43;
 }
 
-/* the blob in the middle */
-.centered-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+
+.text-container {
+  font-size: 24px;
+  color: #010b43;
+  font-weight: bold; /*  text bold */
+  text-align: center;
+  max-height: 100%; /*   container  growss with text */
+  overflow-y: auto; /*  scroll if the text is too long */
+  padding: 10px;
 }
 
 /*  sparkle  */
@@ -278,6 +287,13 @@ footer {
   position: absolute;
   top: 25%;
   right: 17%;
+  width: 10%;
+}
+
+.sparkle-top-left {
+  position: absolute;
+  top: 25%;
+  right: 54%;
   width: 10%;
 }
 
@@ -302,4 +318,43 @@ footer {
   bottom: 45%;
   left: 0.5%;
   width: 10%;
+}
+
+/* blurb for newsletters */
+.blurb {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+  width: 40%; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* media Queries */
+@media screen and (max-width: 768px) {
+  /* styles for mobile devices */
+  .banner {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .empowered-text {
+    font-size: 5vh;
+  }
+
+  .blurb {
+    width: 90%; /* blurb wider on mobile */
+  }
+
+  a[class=pages] {
+    font-size: 2vh;
+    padding: 1vh;
+    margin: 1vh;
+  }
+
+  .text-container {
+    font-size: 18px;
+  }
 }
