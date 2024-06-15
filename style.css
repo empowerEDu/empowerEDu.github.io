@@ -49,7 +49,7 @@ padding-top: 15vh;
 
 /* intro */
 .introduction {
-height: 80vh;
+height: auto;
 padding: 15% 30vw 0 30vw;
 background: #81c3d7;
 width: 100%;
@@ -99,7 +99,7 @@ a[class=opp]:hover {
 /*month summary*/
 .month-at-a-glance {
   width: 100%;
-  height: 70vh;
+  height: auto;
   padding: 60px;
 }
 
