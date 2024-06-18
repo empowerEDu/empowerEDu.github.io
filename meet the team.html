@@ -11,7 +11,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
@@ -21,174 +21,346 @@
     <link rel="stylesheet" href="queries.css" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+        body {
+            background-color: #81C3D7;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .banner {
+            width: 100%;
+            height: 20vh;
+            background-color: whitesmoke;
+            color: #010B43;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+        }
+
+        .pages {
+            display: inline-block;
+        }
+
+        a[class=pages] {
+            border: none;
+            color: #81C3D7;
+            padding: 3vh;
+            text-align: center;
+            text-decoration: none;
+            font-size: 3vh;
+            margin: 3vh;
+            border-radius: 12vh;
+        }
+
+        a[class=pages]:hover {
+            background-color: #81C3D7;
+        }
+
+        .sidenav {
+            height: 100%; /* 100% Full-height */
+            width: 10%; /* Adjust width as needed */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Stay on top */
+            top: 0; /* Stay at the top */
+            right: -25%; /* Position off the screen initially */
+            background-color: #010b43;/* Black */
+            overflow-x: hidden; /* Disable horizontal scroll */
+            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+            padding-top: 6vh; /* Place content 6vh from the top */
+        }
+
+        .sidenav a {
+            padding: 2vh 2vh 2vh 4vh;
+            text-decoration: none;
+            font-size: 2.5vh;
+            color: #ffffff;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #F1F1F1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 2.5vh;
+            font-size: 3.6vh;
+            margin-left: 5vh;
+        }
+
+        .open-btn {
+            font-size: 3vh;
+            cursor: pointer;
+            position: absolute;
+            top: 2.5vh;
+            right: 2.5vh; /* Adjust to position correctly */
+        }
+
+        .empowered-text {
+            font-family: 'Sorts Mill Goudy', serif;
+            font-size: 7vh;
+            margin-left: 1vh;
+            margin-top: 2vh;
+            color: #010B43;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 1.875rem; /* 30px */
+        }
+
+        .column {
+            flex: 0 0 22%; /* Adjust the width as needed */
+        }
+
+        .team-member img {
+            max-width: 100%;
+            height: auto;
+            max-height: 25rem; /* 400px */
+            border-radius: 6.25rem; /* 100px */
+            padding: 0.625rem; /* 1vh */
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.3125rem; /* 5px */
+            padding: 1.25rem; /* 20px */
+            text-align: center;
+            box-shadow: 0 0.25rem 0.5rem 0 #000000; /* 0 4px 8px 0 */
+            transition: 0.3s;
+            margin-bottom: 0.9375rem; /* 15px */
+        }
+
+        .bottom-image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bottom-image {
+            width: 20%; /* Adjust the size as needed */
+            height: 80%;
+            margin-left: 43.75rem; /* 70vw */
+        }
+
+        @media screen and (max-width: 768px) {
+            .banner {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem;
+            }
+
+            .empowered-text {
+                font-size: 5vh;
+            }
+
+            a[class=pages] {
+                font-size: 2vh;
+                padding: 1vh;
+                margin: 1vh;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="banner">
-            <div style="float: left; margin: 3vh;"><img src="images/logo-clear.png" class="logo-img" width="70vh"></div>
-            
+            <div style="float: left; margin: 3vh; display: flex; align-items: center;">
+                <img src="images/logo-clear.png" class="logo-img" width="4.375rem"> <!-- 70px -->
+                <span class="empowered-text">EMPOWERED</span>
+            </div>
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="pages"><a class="pages" href="index.html">Home</a></div>
                 <div class="pages"><a class="pages" href="newsletter.html">Newsletters</a></div>
                 <div class="pages"><a class="pages" href="contact.html">Contact</a></div>
                 <div class="pages"><a class="pages" href="meet the team.html">Team</a></div>
-
             </div>
-            
             <span class="open-btn" onclick="openNav()"><i style="padding: 3vh" class="fa-solid fa-bars"></i></span>
         </div>
     </header>
 
- 
-    <style>
-        .team-member img {
-            max-width: 100%;
-            height: auto;
-            max-height: 400px; 
-            border-radius: 100px;
-            padding: 1vh;
-        }
-        .section-title{
-            padding-top: 10vh;
-        }
-        body{
-            background-color: #81c3d7;
-        }
-
-        a:hover img {
-            padding: 0vh;
-        }
-    </style>
-
-
-    <section id="team" class="container section-team">
-        <h2 class="section-title">Meet the Team</h2>
-
-        <div class="row row-cols-1 row-cols-md-5 g-4">
-
-            <div class="col">
-                <div class="team-member">
-                    <a href="https://www.linkedin.com/in/anahat-kc"><img src="images/ana.jpg" alt="Team Member 1"></a>
-                    <h3>Anahat</h3>
-                    <p>Co-Founder & Co-Chair</p>
-                </div>
+    <center>
+        <h1>Meet The Team Page</h1>
+        <hr>
+        <!-- Team members displayed horizontally -->
+        <div class="row"> 
+            <div class="column"> 
+                <div class="card"> 
+                    <a href="https://www.linkedin.com/in/anahat-kc/">
+                        <img src="images/ana.jpg" style="width: 12.5rem; margin: 0 auto;" alt="Anahat"> <!-- 200px -->
+                    </a>
+                    <div class="container"> 
+                        <h2>Anahat</h2> 
+                        <p>Co-Founder & Co-Chair</p> 
+                        <p>I love the TV show FRIENDS, and my favourite is Chandler!</p> 
+                    </div> 
+                </div> 
+            </div>
+        
+            <div class="column"> 
+                <div class="card"> 
+                    <a href="https://www.linkedin.com/in/vrindaajoshi/">
+                        <img src="images/vrinda.jpg" style="width: 12.5rem; margin: 0 auto;" alt="Vrinda"> <!-- 200px -->
+                    </a>
+                    <div class="container"> 
+                        <h2>Vrinda</h2> 
+                        <p>Co-Founder & Co-Chair</p> 
+                        <p>I own 4 musical instruments that I don’t know how to play - yet!</p> 
+                    </div> 
+                </div> 
             </div>
 
-            <div class="col">
-                <div class="team-member">
-                    <a href="https://www.linkedin.com/in/vrindaajoshi"><img src="images/vrinda.jpg" alt="Team Member 1"></a>
-                    <h3>Vrinda</h3>
-                    <p>Co-Founder & Co-Chair</p>
-                </div>
+            <div class="column"> 
+                <div class="card"> 
+                    <img src="images/i.jpg" style="width: 12.5rem; margin: 0 auto;" alt="Idress"> <!-- 200px -->
+                    <div class="container"> 
+                        <h2>Idress</h2> 
+                        <p>General Member</p> 
+                        <p>I enjoy designing and building custom computers.</p> 
+                    </div> 
+                </div> 
             </div>
 
-            <div class="col">
-                <div class="team-member">
-                    <img src="images/taniya.jpg" alt="Team Member 1">
-                    <h3>Taniya</h3>
-                    <p>Web Developer</p>
-                </div>
+            <div class="column"> 
+                <div class="card"> 
+                    <a href="https://www.linkedin.com/in/dailiang-chen/">
+                        <img src="images/dailiang.png" style="width: 12.5rem; margin: 0 auto;" alt="Dailang"> <!-- 200px -->
+                    </a>
+                    <div class="container"> 
+                        <h2>Dailang</h2> 
+                        <p>General Member</p> 
+                        <p>Math is awesome (if you’re good at it)</p> 
+                    </div> 
+                </div> 
             </div>
 
-            <div class="col">
-                <div class="team-member">
-                    <img src="images/ahmed.jpg" alt="Team Member 1">
-                    <h3>Ahmed</h3>
-                    <p>Web Developer</p>
-                </div>
+            <div class="column"> 
+                <div class="card"> 
+                    <a href="https://www.linkedin.com/in/sajinin/">
+                        <img src="images/IMG_2010.jpg" style="width: 12.5rem; margin: 0 auto;" alt="Sajini"> <!-- 200px -->
+                    </a>
+                    <div class="container"> 
+                        <h2>Sajini</h2> 
+                        <p>Social Media Executive</p> 
+                        <p>I would watch Modern Family for the rest of my life if I could.</p> 
+                    </div> 
+                </div> 
             </div>
 
-            <div class="col">
-                <div class="team-member">
-                    <a href="https://www.linkedin.com/in/sunny-wu-1959942b9"><img src="images/sunny.jpg" alt="Team Member 1"></a>
-                    <h3>Sunny</h3>
-                    <p>Workshop Executive</p>
-                </div>
+            <div class="column"> 
+                <div class="card"> 
+                    <img src="images/sanjana.png" style="width: 12.5rem; margin: 0 auto;" alt="Sanjana"> <!-- 200px -->
+                    <div class="container"> 
+                        <h2>Sanjana</h2> 
+                        <p>Social Media Executive</p> 
+                        <p>I enjoy playing tennis (play on the JV team at Blue Valley High School)</p> 
+                    </div> 
+                </div> 
             </div>
 
-            <div class="col">
-                <div class="team-member">
-                    <img src="images/joli.jpg" alt="Team Member 1">
-                    <h3>Jolnar</h3>
-                    <p>Workshop Executive</p>
-                    </p>
-                </div>
+            <div class="column"> 
+                <div class="card"> 
+                    <img src="images/taniya.jpg" style="width: 12.5rem; margin: 0 auto;" alt="Taniya"> <!-- 200px -->
+                    <div class="container"> 
+                        <h2>Taniya</h2> 
+                        <p>Web Developer</p> 
+                        <p>I love watching movies and going to museums!!</p> 
+                    </div> 
+                </div> 
             </div>
 
-            <div class="col">
-                <div class="team-member">
-                    <a href="https://www.linkedin.com/in/sajinin"><img src="images/IMG_2010.jpg" alt="Team Member 1"></a>
-                    <h3>Sajini</h3>
-                    <p>Social Media Executive</p>
-                </div>
+            <div class="column"> 
+                <div class="card"> 
+                    <img src="images/ahmed (1).jpg" style="width: 12.5rem; margin: 0 auto;" alt="Ahmed"> <!-- 200px -->
+                    <div class="container"> 
+                        <h2>Ahmed</h2> 
+                        <p>Web Developer</p> 
+                        <p>I enjoy stepping out of my comfort zone and trying new things.</p> 
+                    </div> 
+                </div> 
             </div>
 
-            <div class="col">
-                <div class="team-member">
-                    <img src="images/sanjana.png" alt="Team Member 1">
-                    <h3>Sanjana</h3>
-                    <p>Social Media Executive</p>
-                </div>
+            <div class="column"> 
+                <div class="card"> 
+                    <a href="https://www.linkedin.com/in/thomas-jones-2143782b6/">
+                        <img src="images/theo.JPG" style="width: 12.5rem; margin: 0 auto;" alt="Ty"> <!-- 200px -->
+                    </a>
+                    <div class="container"> 
+                        <h2>Ty</h2> 
+                        <p>Outreach Executive</p> 
+                        <p>I am a published poet!</p> 
+                    </div> 
+                </div> 
             </div>
 
-            <div class="col">
-                <div class="team-member">
-                    <a href="https://www.linkedin.com/in/kaushik-setty-21aa78290/"><img src="images/k.jpg" alt="Team Member 1"></a>
-                    <h3>Kaushik</h3>
-                    <p>Newspaper Executive</p>
-                </div>
+            <div class="column"> 
+                <div class="card"> 
+                    <a href="https://www.linkedin.com/in/sunny-wu-1959942b9/">
+                        <img src="images/sunny.jpg" style="width: 12.5rem; margin: 0 auto;" alt="Sunny"> <!-- 200px -->
+                    </a>
+                    <div class="container"> 
+                        <h2>Sunny</h2> 
+                        <p>Workshop Executive</p> 
+                        <p>I’m a competitive dancer!</p> 
+                    </div> 
+                </div> 
             </div>
 
-            <div class="col">
-                <div class="team-member">
-                    <img src="images/humna.jpg" alt="Team Member 1">
-                    <h3>Humna</h3>
-                    <p>Outreach Executive</p>
-                </div>
+            <div class="column"> 
+                <div class="card"> 
+                    <img src="images/joli.jpg" style="width: 12.5rem; margin: 0 auto;" alt="Jolnar"> <!-- 200px -->
+                    <div class="container"> 
+                        <h2>Jolnar</h2> 
+                        <p>Workshop Executive</p> 
+                        <p>2 truths a lie: My favorite color is red, I never ever want to skydive, I want to go on a road trip</p> 
+                    </div> 
+                </div> 
             </div>
 
-            <div class="col">
-                <div class="team-member">
-                    <a href="https://www.linkedin.com/in/mohammed-amjad-b855252a5"><img src="images/moh.jpg" alt="Team Member 1"></a>
-                    <h3>Mohammed</h3>
-                    <p>Outreach Executive</p>
-                </div>
+            <div class="column"> 
+                <div class="card"> 
+                    <a href="https://www.linkedin.com/in/mohammed-amjad-b855252a5/">
+                        <img src="images/moh.jpg" style="width: 12.5rem; margin: 0 auto;" alt="Mohammed"> <!-- 200px -->
+                    </a>
+                    <div class="container"> 
+                        <h2>Mohammed</h2> 
+                        <p>Outreach Executive</p> 
+                        <p>I like going outdoors and exploring nature.</p> 
+                    </div> 
+                </div> 
             </div>
 
-            
-            <div class="col">
-                <div class="team-member">
-                    <a href="http://www.linkedin.com/in/thomas-jones-2143782b6"><img src="images/theo.JPG" alt="Team Member 1"></a>
-                    <h3>Ty</h3>
-                    <p>Outreach Executive</p>
-                </div>
+            <div class="column"> 
+                <div class="card"> 
+                    <img src="images/humna.jpg" style="width: 12.5rem; margin: 0 auto;" alt="Humna"> <!-- 200px -->
+                    <div class="container"> 
+                        <h2>Humna</h2> 
+                        <p>Outreach Executive</p> 
+                        <p>I enjoy watching dystopian movies in my free time.</p> 
+                    </div> 
+                </div> 
             </div>
-            
-            <div class="col">
-                <div class="team-member">
-                    <img src="images/i.jpg" alt="Team Member 1">
-                    <h3>Idrees</h3>
-                    <p>General Member</p>
-                </div>
-            </div>
+        </div> 
 
-            <div class="col">
-                <div class="team-member">
-                    <a href="https://www.linkedin.com/in/dailiang-chen"><img src="images/dailiang.png" alt="Team Member 1"></a>
-                    <h3>Dailiang</h3>
-                    <p>General Member</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <img src="images/lumie.png" class="bottom-image" alt="Bottom Right Image">
+    </center>
 
-    <footer>&copy; Copyright 2024 EmpowerED</footer>
-
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        function openNav() {
+        document.getElementById("mySidenav").style.right = "0";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.right = "-25%";
+    }
     </script>
 </body>
 </html>

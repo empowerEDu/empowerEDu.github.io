@@ -9,6 +9,8 @@
     <meta name="keywords" content="STEM, computer science, empowerED, York Region, high school, middle school">
     <link rel="icon" type="images/png" href="images/logo-clear.png">
     <title>EmpowerED</title>
+
+    
    
     <!--Font stuff-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,47 +35,104 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            overflow: hidden; /* Prevent scrolling */
+            overflow: auto; /* Allow scrolling */
+            min-height: 150vh; /* Ensure a minimum height */
+            background-color: #4e86be; /* Set background color to match.Month-at-Glance */
         }
-        .intro-text h1 {
+
+       .intro-text h1 {
             font-family: 'Sorts Mill Goudy', serif;
-            font-size: 115px;
+            font-size: 4vw;
             text-align: center;
         }
-        .intro-text p {
+       .intro-text p {
             font-family: 'Sorts Mill Goudy', serif;
-            font-size: 35px;
+            font-size: 2vw;
             text-align: center;
         }
-        .lumie-img {
+       .lumie-img {
             display: block;
-            margin: 15px auto; /* Adjust margin as needed */
+            margin: 1vh auto; /* Adjust margin as needed */
         }
-        .sparkles-png {
+       .sparkles-png {
             position: absolute;
             left: 0;
-            top: calc(50% + 200px); /* Adjust the value as needed */
+            top: calc(50% + 15vh); /* Adjust the value as needed */
             transform: translateY(-50%);
-            transform: translateX(90%);
-            width: 30vh;
+            transform: translateX(60%);
+            width: 20vh;
         }
-        .sparkles2-png {
+       .sparkles2-png {
             position: absolute;
             right: 0; /* Aligns the element to the right edge of the container */
-            top: calc(50% + 200px); /* Adjust the value as needed */
+            top: calc(50% + 15vh); /* Adjust the value as needed */
             transform: translateY(-50%);
-            transform: translateX(-100%); /* Adjust the value as needed */
-            width: 30vh;
+            transform: translateX(-65%); /* Adjust the value as needed */
+            width: 20vh;
         }
-        .sparkles-container {
+       .sparkles-container {
             position: relative;
         }
-        .banner {
+       .banner {
             overflow: hidden;
         }
         header {
             box-sizing: border-box;
             padding-bottom: 0; /* Ensure no padding at the bottom */
+            height: 150vh; /* Increased height for the header section */
+            background-color: #81C3D7; /* Set background color to match.Month-at-Glance */
+        }
+       .Month-at-Glance {
+            height: 100vh;
+            background: #81C3D7;
+            text-align: center;
+            position: relative; /* Ensure the section is positioned correctly */
+        }
+       .Month-at-Glance img {
+            width: 100%; /* Make the image cover the entire width */
+            height: auto; /* Maintain the aspect ratio */
+        }
+        /* Side navigation menu */
+       .sidenav {
+            height: 100%; /* 100% Full-height */
+            width: 10%; /* Adjust width as needed */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Stay on top */
+            top: 0; /* Stay at the top */
+            right: -25%; /* Position off the screen initially */
+            background-color: #010b43;/* Black */
+            overflow-x: hidden; /* Disable horizontal scroll */
+            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+            padding-top: 6vh; /* Place content 6vh from the top */
+        }
+
+       .sidenav a {
+            padding: 2vh 2vh 2vh 4vh;
+            text-decoration: none;
+            font-size: 2.5vh;
+            color: #ffffff;
+            display: block;
+            transition: 0.3s;
+        }
+
+       .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+       .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 2.5vh;
+            font-size: 3.6vh;
+            margin-left: 5vh;
+        }
+
+       .open-btn {
+            font-size: 3vh;
+            cursor: pointer;
+            position: absolute;
+            top: 2.5vh;
+            right: 2.5vh; /* Adjust to position correctly */
         }
     </style>
 </head>
@@ -81,13 +140,13 @@
 <body>
 <header>
     <div class="banner">
-        <div style="float: left; margin: 3vh;">
-            <img src="images/logo-clear.png" class="logo-img" width="70vh">
+        <div style="float: left; margin: 2vh;">
+            <img src="images/logo-clear.png" class="logo-img" width="5vw">
         </div>
           
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="pages"><a class="pages" href="">Home</a></div>
+            <div class="pages"><a class="pages" href="index.html">Home</a></div>
             <div class="pages"><a class="pages" href="newsletter.html">Newsletters</a></div>
             <div class="pages"><a class="pages" href="opportunities.html">Opportunities</a></div>
             <div class="pages"><a class="pages" href="contact.html">Contact</a></div>
@@ -95,13 +154,13 @@
         </div>
             
         <!-- Use any element to open the sidenav -->
-        <span class="open-btn" onclick="openNav()"><i style="padding: 3vh" class="fa-solid fa-bars"></i></span>
+        <span class="open-btn" onclick="openNav()"><i style="padding: 2vh" class="fa-solid fa-bars"></i></span>
     </div>
 
     <div class="introduction text-center">
         <div class="sparkles-container">
             <img src="images/sparkles.png" class="sparkles-png">
-            <img src="images/sparkles2.png" class="sparkles2-png"> <!-- Added this line -->
+            <img src="images/sparkles2.png" class="sparkles2-png">
         </div>
         <div class="intro-text">
             <h1>We're EmpowerED</h1>
@@ -109,14 +168,27 @@
               that aims to excite middle and high school students about computer<br>
               science and other opportunities in STEM!</p>
         </div>
-        <img src="images/LumieCool.png" class="lumie-img" style="width: 35vh;">
+        <img src="images/LumieCool.png" class="lumie-img" style="width: 40vh;">
     </div>
 </header>
+
+<div class="Month-at-Glance">
+    <img src="images/o.png" alt="Month at Glance">
+</div>
 
 <script src="script.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+</script>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.right = "0";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.right = "-25%";
+    }
 </script>
 </body>
 </html>
