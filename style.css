@@ -11,7 +11,6 @@ html, body {
   overflow-x: hidden;
 }
 
-
 .wrapper {
   background-color: #81c3d7;
   min-height: 100vh;
@@ -56,12 +55,14 @@ a[class=pages]:hover {
 
 /* intro */
 .introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: 80vh;
-  padding: 15% 30vw 0 30vw;
   background: #81c3d7;
-  width: 100%;
-  padding: 60px;
   color: #010b43;
+  text-align: center;
 }
 
 .lumie-img:hover {
@@ -269,8 +270,10 @@ footer {
   margin-left: 1vh;
   margin-top: 2vh; 
   color: #010b43;
+  text-align: center;
+  width: 100%;
+  position: relative;
 }
-
 
 .text-container {
   font-size: 24px;
@@ -282,27 +285,7 @@ footer {
   padding: 10px;
 }
 
-/*  sparkle  */
-.sparkle-top-right {
-  position: absolute;
-  top: 25%;
-  right: 17%;
-  width: 10%;
-}
 
-.sparkle-top-left {
-  position: absolute;
-  top: 25%;
-  right: 54%;
-  width: 10%;
-}
-
-.sparkle-bottom-left {
-  position: absolute;
-  bottom: 10%;
-  left: 17%;
-  width: 10%;
-}
 
 /* lightbulb holding the news paper */
 .lightbulb-left {
@@ -356,5 +339,132 @@ footer {
 
   .text-container {
     font-size: 18px;
+  }
+}
+
+body {
+  background-color: #81C3D7;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  background: #81C3D7;
+  color: #010B43;
+  text-align: center;
+}
+
+.Month-at-Glance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background: #81C3D7;
+  padding: 2rem 0;
+}
+
+.Month-at-Glance img {
+  max-width: 50%;
+  height: auto;
+}
+
+.workshop-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.workshop-images img {
+  max-width: 30%;
+  height: auto;
+}
+
+.newsletter {
+  padding: 2rem 30vw;
+  background: #81C3D7;
+  width: 100%;
+  color: #010B43;
+  text-align: center;
+}
+
+input[type="name"], input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  width: 70%;
+  max-width: 300px;
+}
+
+button[type="submit"] {
+  width: 40%;
+  padding: 5px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  font-weight: 300;
+  font-size: 15px;
+  margin: 0 auto;
+  margin-top: 3vh;
+  display: block;
+}
+
+.partners {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.partners img {
+  max-width: 15%;
+  height: auto;
+  margin: 0 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .empowered-text {
+    font-size: 5vh;
+  }
+
+  .Month-at-Glance img {
+    max-width: 80%;
+  }
+
+  .workshop-images img {
+    max-width: 80%;
+  }
+
+  .newsletter {
+    padding: 2rem 5vw;
+  }
+
+  input[type="name"], input[type="email"] {
+    width: 90%;
+  }
+
+  button[type="submit"] {
+    width: 70%;
+  }
+
+  .partners img {
+    max-width: 40%;
   }
 }

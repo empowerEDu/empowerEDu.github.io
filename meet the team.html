@@ -53,7 +53,7 @@
             text-decoration: none;
             font-size: 3vh;
             margin: 3vh;
-            border-radius: 12vh;
+            border-radius: 12px;
         }
 
         a[class=pages]:hover {
@@ -61,45 +61,45 @@
         }
 
         .sidenav {
-            height: 100%; /* 100% Full-height */
-            width: 10%; /* Adjust width as needed */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Stay on top */
-            top: 0; /* Stay at the top */
-            right: -25%; /* Position off the screen initially */
-            background-color: #010b43;/* Black */
-            overflow-x: hidden; /* Disable horizontal scroll */
-            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-            padding-top: 6vh; /* Place content 6vh from the top */
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: #010b43;
+            overflow-x: hidden;
+            padding-top: 60px;
+            transition: 0.5s;
         }
 
         .sidenav a {
-            padding: 2vh 2vh 2vh 4vh;
+            padding: 8px 8px 8px 32px;
             text-decoration: none;
-            font-size: 2.5vh;
-            color: #ffffff;
+            font-size: 25px;
+            color: #f8edeb;
             display: block;
             transition: 0.3s;
         }
 
         .sidenav a:hover {
-            color: #F1F1F1;
+            color: #f1f1f1;
         }
 
         .sidenav .closebtn {
             position: absolute;
             top: 0;
-            right: 2.5vh;
-            font-size: 3.6vh;
-            margin-left: 5vh;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
         }
 
         .open-btn {
-            font-size: 3vh;
+            font-size: 30px;
             cursor: pointer;
             position: absolute;
-            top: 2.5vh;
-            right: 2.5vh; /* Adjust to position correctly */
+            top: 20px;
+            right: 25px;
         }
 
         .empowered-text {
@@ -173,9 +173,10 @@
     <header>
         <div class="banner">
             <div style="float: left; margin: 3vh; display: flex; align-items: center;">
-                <img src="images/logo-clear.png" class="logo-img" width="4.375rem"> <!-- 70px -->
+                <img src="images/logo-clear.png" class="logo-img" width="70px">
                 <span class="empowered-text">EMPOWERED</span>
             </div>
+            
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="pages"><a class="pages" href="index.html">Home</a></div>
@@ -183,12 +184,13 @@
                 <div class="pages"><a class="pages" href="contact.html">Contact</a></div>
                 <div class="pages"><a class="pages" href="meet the team.html">Team</a></div>
             </div>
+                
             <span class="open-btn" onclick="openNav()"><i style="padding: 3vh" class="fa-solid fa-bars"></i></span>
         </div>
     </header>
 
     <center>
-        <h1>Meet The Team Page</h1>
+        <h1>Meet The Team</h1>
         <hr>
         <!-- Team members displayed horizontally -->
         <div class="row"> 
@@ -279,7 +281,7 @@
 
             <div class="column"> 
                 <div class="card"> 
-                    <img src="images/ahmed (1).jpg" style="width: 12.5rem; margin: 0 auto;" alt="Ahmed"> <!-- 200px -->
+                    <img src="images/ahmed.jpg" style="width: 12.5rem; margin: 0 auto;" alt="Ahmed"> <!-- 200px -->
                     <div class="container"> 
                         <h2>Ahmed</h2> 
                         <p>Web Developer</p> 
@@ -355,12 +357,12 @@
 
     <script>
         function openNav() {
-        document.getElementById("mySidenav").style.right = "0";
-    }
+            document.getElementById("mySidenav").style.width = "250px";
+        }
 
-    function closeNav() {
-        document.getElementById("mySidenav").style.right = "-25%";
-    }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
     </script>
 </body>
 </html>
