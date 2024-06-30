@@ -22,6 +22,7 @@ body {
   height: 20vh;
   background-color: whitesmoke;
   color: #010b43;
+
 }
 
 .pages {
@@ -72,7 +73,7 @@ a[class=appl] {
   font-size: 20px;
   margin: 4px 10px;
   border-radius: 12px;
-  float: right;
+  display: inline-block;
 }
 
 a[class=appl]:hover {
