@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.975e2780.css",
-    "main.js": "/static/js/main.4c9dfaa8.js",
+    "main.js": "/static/js/main.aab3fb37.js",
     "static/js/453.8205fc2d.chunk.js": "/static/js/453.8205fc2d.chunk.js",
     "static/media/workshop6.jpg": "/static/media/workshop6.b1c1848f0338caf3ac1a.jpg",
     "static/media/workshop4.jpg": "/static/media/workshop4.f9dd59c66b3a544a005b.jpg",
@@ -15,11 +15,11 @@
     "static/media/ontariofluidpartner.png": "/static/media/ontariofluidpartner.af1c49082d2112f3875a.png",
     "index.html": "/index.html",
     "main.975e2780.css.map": "/static/css/main.975e2780.css.map",
-    "main.4c9dfaa8.js.map": "/static/js/main.4c9dfaa8.js.map",
+    "main.aab3fb37.js.map": "/static/js/main.aab3fb37.js.map",
     "453.8205fc2d.chunk.js.map": "/static/js/453.8205fc2d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.975e2780.css",
-    "static/js/main.4c9dfaa8.js"
+    "static/js/main.aab3fb37.js"
   ]
 }
